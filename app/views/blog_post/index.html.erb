@@ -4,5 +4,5 @@
 <% @blog_posts.each do |post| %>
     <li style='margin: 10px 0'> <%= link_to post.title, blog_post_path(post) %> </li>
     <%end%>
-    <li style='margin: 10px 0'> <%= link_to 'Create New Post', blog_posts_path %> </li>
+    <li style='margin: 10px 0'> <%= link_to 'Create New Post', new_blog_post_path %> </li>
 </ul>
