@@ -1,7 +1,8 @@
-<h1>Blog Posts-Home</h1>
+<h1 style='text-align: center;'>Blog Posts-Home</h1>
 
-<ul>
+<ul style='text-align: center; list-style: none; border: 2px solid black;'>
 <% @blog_posts.each do |post| %>
-    <li> <%= link_to post.title, blog_post_path(post) %> </li>
+    <li style='margin: 10px 0'> <%= link_to post.title, blog_post_path(post) %> </li>
     <%end%>
+    <li style='margin: 10px 0'> <%= link_to 'Create New Post', blog_posts_path %> </li>
 </ul>
