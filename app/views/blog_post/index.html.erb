@@ -1,0 +1,7 @@
+<h1>Blog Posts-Home</h1>
+
+<ul>
+<% @blog_posts.each do |post| %>
+    <li> <%= link_to post, blog_posts_path %> </li>
+    <%end%>
+</ul>
