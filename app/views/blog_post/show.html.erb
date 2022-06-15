@@ -1,6 +1,6 @@
 <h2>Blog Post - <%= @blog_post.title %> </h2>
 
 <h3><%= @blog_post.content %> </h3>
-
+<h4><%= button_to 'Delete', delete_blog_post_path(@blog_post), method: :delete, data: { confirm: "Are you sure?"} %></h4>
 <h4><%= link_to 'Home Page', blog_posts_path %> </h4>
     
