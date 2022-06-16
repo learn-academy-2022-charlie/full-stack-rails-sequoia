@@ -4,5 +4,6 @@
 <h4><%= link_to 'Delete', delete_blog_post_path(@blog_post),
                 data: { "turbo-method": :delete,
                         turbo_confirm: 'Are you sure?'} %></h4>
+<h4><%= link_to 'Update Post', edit_blog_post_path(@blog_post)%></h4>
 <h4><%= link_to 'Home Page', blog_posts_path %> </h4>
     
